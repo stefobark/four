@@ -1,0 +1,21 @@
+4.9
+a. Show the result of inserting 3, 1, 4, 6, 9, 2, 5, 7 into an initially empty binary
+search tree.
+
+									3
+								/		\
+							  1		 4
+							   \		  \
+								 2			6	
+								 		  / \
+								 		 5	  7
+										
+
+b. Show the result of deleting the root.
+								1
+							  / \
+							 2   4
+									\
+									 6	
+									/ \
+								  5   7

@@ -1,0 +1,38 @@
+
+4.19
+show the result of inserting 2, 1, 4, 5, 9, 3, 6, 7 into an initially empty AVL tree.
+
+
+									2
+							1				4
+													5
+															9
+								VIOLATED. GOTTA ROTATE
+							
+							
+									4
+							2				5
+						1		3				9
+											6
+												7
+												
+								VIOLATED. GOTTA ROTATE.
+								
+									4
+							2				5
+						1		3				9
+											6		7
+											
+						all branches don't differ beyond a height of 1, so I think it's balanced.
+						but, it seems we would want to get something like this:
+						
+						
+										5
+								4				9
+							2				6		7
+						1		3		
+						
+						No. I guess that's the same. Now the left branch is higher by 1 instead of the right branch.
+											
+											
+

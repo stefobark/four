@@ -1,0 +1,116 @@
+**********************************************
+4.1 For the tree in Figure 4.74:
+**********************************************
+	a. Which node is the root?
+	
+		a
+
+	b. Which nodes are leaves?
+
+		G,H,I,L,M, K
+		
+		
+**********************************************
+4.2 For each node in the tree of Figure 4.74:
+	
+	a. Name the parent node.
+	b. List the children.
+	c. List the siblings.
+	d. Compute the depth.
+	e. Compute the height.
+
+**********************************************
+
+	Root:
+		Node A:
+			a: NULL
+			b: B,C
+			c: NULL
+			d: 0
+			e: 3
+
+	Depth 1:
+	
+		Node B
+			a: A
+			b: D,E
+			c: C
+			d: 1
+			e: 2
+	
+		Node E
+			a: B
+			b: I,J
+			c: D,F
+			d: 2
+			e: 1
+	
+		Node F
+			a: B
+			b: K
+			c: D,E
+			d: 2
+			e: 1
+		
+	Depth 2:
+
+		Node D
+			a: B
+			b: G,H
+			c: E,F
+			d: 2
+			e: 1
+
+	Depth 3:
+	
+		Node G
+			a: D
+			b: NULL
+			c: H,I,J,K
+			d: 3
+			e: 0
+	
+		Node H
+			a: D
+			b: NULL
+			c: G,I,J,K
+			d: 3
+			e: 0
+	
+	Node I
+		a: E
+		b: NULL
+		c: G,H,J,K
+		d: 3
+		e: 0
+	
+	Node J
+		a: E
+		b: L,M
+		c: G,H,I,K
+		d: 3
+		e: 1
+	
+	Node K
+		a: F
+		b: NULL
+		c: G,H,J,K
+		d: 3
+		e: 0
+
+Depth 4:
+
+	Node L
+		a: J
+		b: NULL
+		c: M
+		d: 4
+		e: 0
+	
+	Node M
+		a: J
+		b: NULL
+		c: L
+		d: 4
+		e: 0
+
